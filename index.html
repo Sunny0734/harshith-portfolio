@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-theme="dark">
+    <!-- Header & Navigation -->
+    <header class="header">
+      <div class="nav-container">
+        <a href="#hero" class="logo">Port<span>folio</span></a>
+
+        <nav class="nav-menu" id="nav-menu">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#achievements" class="nav-link">Achievements</a>
+          <a href="#contact" class="nav-link btn-contact-nav">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <!-- Theme Toggle Button -->
+          <button id="theme-toggle" aria-label="Toggle dark/light theme">
+            <i class="fa-solid fa-sun icon-sun"></i>
+            <i class="fa-solid fa-moon icon-moon"></i>
+          </button>
+          <!-- Hamburger Menu for Mobile -->
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Toggle navigation menu"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="hero-section">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <p class="hero-subtitle">Hi, my name is</p>
+            <h1 class="hero-title">Harshith Reddy</h1>
+            <div class="hero-badge">
+              <i class="fa-solid fa-bolt"></i> Ready for internships & projects
+            </div>
+            <h2 class="hero-tagline">
+              Computer Engineering Student & Developer @ ISU
+            </h2>
+            <p class="hero-desc">
+              I design and develop software solutions, ranging from embedded
+              systems and robotics control systems to web and software
+              applications.
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+              <a
+                href="https://docs.google.com/document/d/10vkm7USZkGOel05UI43o9VcGPnqhB6p6fg2Z_pmyUPw/export?format=pdf"
+                class="btn btn-outline"
+                id="downloadResumeLink"
+                download="Harshith_Reddy_Resume.pdf"
+              >
+                <i class="fa-solid fa-download"></i> Resume
+              </a>
+            </div>
+          </div>
+          <div class="hero-image-wrapper">
+            <div class="hero-image-container">
+              <img
+                src="images/profile.jpg"
+                alt="Harshith Reddy"
+                class="hero-image"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <div class="scroll-dot"></div>
+          <p>Scroll to explore</p>
+        </div>
+      </section>
+
+      <!-- About Me Section -->
+      <section id="about" class="about-section section reveal">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-grid">
+            <div class="about-text">
+              <p>
+                I am a dedicated
+                <strong>Computer Engineering student</strong> passionate about
+                bridging the gap between hardware architecture and high-level
+                software development.
+              </p>
+              <p>
+                My academic path allows me to explore how computer systems
+                function from the logic gates up to complex software platforms.
+                My core interests lie in:
+              </p>
+              <ul class="interests-list">
+                <li>
+                  <i class="fa-solid fa-code text-primary"></i> Software
+                  Development
+                </li>
+                <li>
+                  <i class="fa-solid fa-robot text-primary"></i> Robotics &
+                  Controls
+                </li>
+                <li>
+                  <i class="fa-solid fa-microchip text-primary"></i> Embedded
+                  Systems
+                </li>
+                <li>
+                  <i class="fa-solid fa-diagram-project text-primary"></i>
+                  Algorithms & Data Structures
+                </li>
+              </ul>
+              <p>
+                When I'm not coding or wiring up microcontrollers, I enjoy
+                participating in robotics events, attending hackathons, and
+                learning about emerging technologies.
+              </p>
+            </div>
+            <div class="about-img-container">
+              <div class="about-img-placeholder">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills-section section reveal">
+        <div class="container">
+          <h2 class="section-title">My Skills</h2>
+          <p class="section-subtitle">
+            A collection of tools, technologies, and frameworks I work with.
+          </p>
+
+          <div class="skills-grid">
+            <!-- Languages -->
+            <div class="skill-category">
+              <h3>Languages</h3>
+              <div class="skill-tags">
+                <span class="skill-tag"
+                  ><i class="fa-brands fa-python"></i> Python</span
+                >
+                <span class="skill-tag"
+                  ><i class="fa-solid fa-code"></i> C++</span
+                >
+                <span class="skill-tag"
+                  ><i class="fa-brands fa-java"></i> Java</span
+                >
+                <span class="skill-tag"
+                  ><i class="fa-brands fa-js"></i> JavaScript</span
+                >
+              </div>
+            </div>
+            <!-- Core CS -->
+            <div class="skill-category">
+              <h3>Computer Science</h3>
+              <div class="skill-tags">
+                <span class="skill-tag"
+                  >Data Structures & Algorithms (DSA)</span
+                >
+                <span class="skill-tag">Object-Oriented Programming (OOP)</span>
+                <span class="skill-tag">RESTful APIs</span>
+              </div>
+            </div>
+            <!-- Hardware/Embedded -->
+            <div class="skill-category">
+              <h3>Hardware & Embedded</h3>
+              <div class="skill-tags">
+                <span class="skill-tag"
+                  ><i class="fa-solid fa-microchip"></i> Basic Embedded
+                  Systems</span
+                >
+                <span class="skill-tag">Microcontrollers (Arduino, STM32)</span>
+                <span class="skill-tag">Sensor Integration</span>
+              </div>
+            </div>
+            <!-- Tools -->
+            <div class="skill-category">
+              <h3>Tools & Control</h3>
+              <div class="skill-tags">
+                <span class="skill-tag"
+                  ><i class="fa-brands fa-git-alt"></i> Git</span
+                >
+                <span class="skill-tag"
+                  ><i class="fa-brands fa-github"></i> GitHub</span
+                >
+                <span class="skill-tag"
+                  ><i class="fa-solid fa-terminal"></i> Command Line</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="experience-section section reveal">
+        <div class="container">
+          <h2 class="section-title">Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Sept 2024 - Present</div>
+              <div class="timeline-content">
+                <h3>Lead Programmer</h3>
+                <span class="timeline-company"
+                  >FIRST Tech Challenge (FTC) Robotics Team</span
+                >
+                <p>
+                  Developed and maintained the robot's Java control software
+                  using the FTC SDK. Programmed precise autonomous routines
+                  integrating roadrunner path-planning, PID controllers, and
+                  computer vision algorithms for object detection.
+                </p>
+                <ul class="experience-bullets">
+                  <li>
+                    Designed complex state machines to control arm, intake, and
+                    lift mechanisms smoothly.
+                  </li>
+                  <li>
+                    Optimized sensor feedback loops (encoders, IMUs) to improve
+                    autonomous positioning accuracy by 15%.
+                  </li>
+                  <li>
+                    Mentored junior team members in Java programming basics and
+                    version control using Git/GitHub.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects-section section reveal">
+        <div class="container">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">
+            Some of the projects I've built in school, hackathons, and my free
+            time.
+          </p>
+
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+              <div class="project-header">
+                <i class="fa-solid fa-robot project-icon"></i>
+                <a
+                  href="#"
+                  class="project-github-link"
+                  aria-label="GitHub Repository"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+              <h3>Autonomous FTC Robot Controller</h3>
+              <p class="project-desc">
+                Autonomous movement algorithms and state-machine hardware
+                controls programmed using Java for the FTC competition robot.
+                Utilized PID loops and Odometry tracking.
+              </p>
+              <div class="project-tech">
+                <span>Java</span>
+                <span>FTC SDK</span>
+                <span>Git</span>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+              <div class="project-header">
+                <i class="fa-solid fa-microchip project-icon"></i>
+                <a
+                  href="#"
+                  class="project-github-link"
+                  aria-label="GitHub Repository"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+              <h3>Smart Home Weather Node</h3>
+              <p class="project-desc">
+                An embedded systems project featuring an ESP32 microcontroller
+                reading DHT22 temperature and humidity data, reporting values to
+                a local server using RESTful APIs.
+              </p>
+              <div class="project-tech">
+                <span>C++</span>
+                <span>ESP32</span>
+                <span>APIs</span>
+                <span>JSON</span>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+              <div class="project-header">
+                <i class="fa-solid fa-code-branch project-icon"></i>
+                <a
+                  href="#"
+                  class="project-github-link"
+                  aria-label="GitHub Repository"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+              <h3>Custom DSA Library</h3>
+              <p class="project-desc">
+                A helper library containing optimized custom implementations of
+                standard data structures and searching/sorting algorithms
+                developed for rapid prototyping.
+              </p>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>DSA</span>
+                <span>Unit Testing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Achievements Section -->
+      <section id="achievements" class="achievements-section section reveal">
+        <div class="container">
+          <h2 class="section-title">Achievements</h2>
+          <div class="achievements-grid">
+            <div class="achievement-card">
+              <div class="achievement-icon">
+                <i class="fa-solid fa-trophy"></i>
+              </div>
+              <h3>FTC Regional Inspire Award Winner</h3>
+              <p class="achievement-desc">
+                Awarded to the team that best embodies the spirit of FIRST and
+                excels in both competitive robot design and community outreach.
+              </p>
+              <span class="achievement-date">2025</span>
+            </div>
+
+            <div class="achievement-card">
+              <div class="achievement-icon">
+                <i class="fa-solid fa-medal"></i>
+              </div>
+              <h3>Honor Roll Academic Distinction</h3>
+              <p class="achievement-desc">
+                Recognized for maintaining a cumulative GPA above 3.8 across all
+                STEM and foundational high school/college coursework.
+              </p>
+              <span class="achievement-date">2023 - Present</span>
+            </div>
+
+            <div class="achievement-card">
+              <div class="achievement-icon">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <h3>School STEM Fair First Place</h3>
+              <p class="achievement-desc">
+                Awarded first place in the Engineering and Technology division
+                for the design and assembly of a solar-tracking Arduino array.
+              </p>
+              <span class="achievement-date">2024</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section section reveal">
+        <div class="container">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">
+            Have a project idea, opportunity, or simply want to chat? Shoot me a
+            message!
+          </p>
+
+          <div class="contact-container">
+            <div class="contact-info">
+              <div class="contact-info-item">
+                <i class="fa-solid fa-envelope contact-icon"></i>
+                <div>
+                  <h4>Email</h4>
+                  <a href="mailto:sunnyanumula7@gmail.com"
+                    >sunnyanumula7@gmail.com</a
+                  >
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <i class="fa-brands fa-linkedin contact-icon"></i>
+                <div>
+                  <h4>LinkedIn</h4>
+                  <a
+                    href="https://linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >linkedin.com/in/Harshith_Reddy_Anumula</a
+                  >
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <i class="fa-brands fa-github contact-icon"></i>
+                <div>
+                  <h4>GitHub</h4>
+                  <a
+                    href="https://github.com/Sunny0734"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >github.com/Sunny0734</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>&copy; 2026 Harshith Reddy. All rights reserved.</p>
+        <p>Designed and Built with HTML, CSS, & JS</p>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JS Script File -->
+    <script src="script.js"></script>
+  </body>
+</html>
